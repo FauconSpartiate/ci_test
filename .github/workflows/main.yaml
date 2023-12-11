@@ -64,7 +64,7 @@ jobs:
           customImage: "unityci/editor:ubuntu-2022.3.13f1-linux-il2cpp-3.0.0"
           githubToken: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup dotnet 5 for SonarQube
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "5.0.x"
       - name: Set up JDK 11 for SonarQube
